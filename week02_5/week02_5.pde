@@ -10,17 +10,17 @@ void setup()
   face4 = flower[int(random(4))] + int(random(13)+1);
   //取整數0 ...12 所以再+1
 }
-int W=25;
 String face1,face2,face3,face4;
 void draw()
 {
-  drawPokerCard(100,100,"face1");
-  drawPokerCard(130,150,"face2");
-  drawPokerCard(160,200,"face3");
-  drawPokerCard(190,250,"face4");
+  drawPokerCard(100,100,face1);
+  drawPokerCard(130,150,face2);
+  drawPokerCard(160,200,face3);
+  drawPokerCard(190,250,face4);
 }
 void drawPokerCard(int x,int y, String face)
 {
+  int W=25;
   fill(255);
   rect(x-W/2,y-W/2,150+W,250+W,20);
   fill(#D86262);
